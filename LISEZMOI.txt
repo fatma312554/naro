@@ -1,0 +1,13 @@
+NARO - Where history lives
+
+Ouvrir le site : double-cliquer sur index.html (internet requis pour les polices).
+
+Dossiers
+  index.html      structure des 3 pages (accueil, produit, informations)
+  css/style.css   styles
+  js/script.js    navigation entre les pages, tailles, quantité, commande
+  images/         visuels du site
+
+Recevoir les commandes : dans js/script.js, renseigner en haut du fichier
+  var WA='';    numéro WhatsApp avec indicatif, ex. 21620123456
+  var MAIL='';  ou adresse e-mail de NARO

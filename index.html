@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NARO · Where history lives</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wdth,wght@0,62.5..100,300..800;1,62.5..100,300..800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-p="accueil">
+
+<main>
+<section class="page on" id="accueil" aria-label="Accueil">
+<div class="fr" style="--w:min(600px,54svh);--ar:1250/1200;--l:10.00%;--r:10.08%;--t:21.13%;--b:15.97%"><div class="p"><h1>NARO</h1><p class="tg it">Where history lives</p></div><img class="f" src="images/f26.webp" alt=""></div>
+<p class="say">Un rêve né de l'histoire de Hammam-Lif, fait par amour, par âme, par tout.</p>
+</section>
+
+<section class="page" id="piece" aria-label="La pièce">
+<div class="wrap">
+<div class="top"><button data-go="accueil" aria-label="Retour à l'accueil">NARO</button></div>
+<div class="two">
+<div class="pair">
+<figure><div class="arch"><img src="images/front.webp" alt="T-shirt NARO, face : petit logo de Bou Kornine" width="620" height="852"></div><figcaption>Face</figcaption></figure>
+<figure><div class="arch"><img src="images/back.webp" alt="T-shirt NARO, dos : collage d'archives de Hammam-Lif" width="620" height="814"></div><figcaption>Dos</figcaption></figure>
+</div>
+<div>
+<h2>T-shirt NARO</h2>
+<p class="pr">65 DT</p>
+<fieldset><legend>Taille</legend><div class="sz" id="sz"><button type="button" aria-pressed="false">S</button><button type="button" aria-pressed="true">M</button><button type="button" aria-pressed="false">L</button><button type="button" aria-pressed="false">XL</button></div></fieldset>
+<fieldset><legend>Quantité</legend><div class="qt"><button type="button" id="minus" aria-label="Moins">−</button><output id="qty" aria-live="polite">1</output><button type="button" id="plus" aria-label="Plus">+</button></div></fieldset>
+<button class="btn" data-go="commande">Commander</button>
+</div></div></div>
+</section>
+
+<section class="page" id="commande" aria-label="Vos informations">
+<div class="wrap">
+<div class="top"><button data-go="accueil" aria-label="Retour à l'accueil">NARO</button></div>
+<div class="two">
+<div class="rc"><div class="arch"><img src="images/front.webp" alt="" width="620" height="852"></div>
+<dl><dt>Taille</dt><dd id="rs">M</dd><dt>Quantité</dt><dd id="rq">1</dd><dt>Total</dt><dd id="rt">65 DT</dd></dl></div>
+<div>
+<form id="f" novalidate>
+<h2>Vos informations</h2>
+<p class="tot" style="margin-top:0"><span>Total à payer</span><b id="total">65 DT</b></p>
+<label>Nom complet<input id="nm" autocomplete="name"></label>
+<label>Téléphone<input id="ph" type="tel" autocomplete="tel"></label>
+<label>Ville et adresse de livraison<textarea id="ad" rows="3" autocomplete="street-address"></textarea></label>
+<p id="err" class="er" role="alert"></p>
+<div class="acts"><button type="submit" class="btn">Confirmer la commande</button><button type="button" class="btn ghost" id="no">Annuler</button></div>
+</form>
+<div id="done" hidden><h2>Merci pour votre commande</h2><p id="st" role="status"></p><pre id="recap"></pre>
+<div class="acts"><button class="btn" id="send">Envoyer la commande</button><button class="btn ghost" id="home">Retour à l'accueil</button></div></div>
+</div></div></div>
+</section>
+</main>
+
+<button class="btn go" data-go="piece">Découvrir la pièce</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
