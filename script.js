@@ -1,5 +1,5 @@
 (function(){
-var WA='',MAIL=''; // numéro WhatsApp (ex. 21620123456) ou e-mail de NARO pour recevoir les commandes
+var WA='21628535678';,MAIL=''; // numéro WhatsApp (ex. 21620123456) ou e-mail de NARO pour recevoir les commandes
 var $=function(i){return document.getElementById(i)},PRICE=65,qty=1,size='M',msg='',pages=['accueil','piece','commande'];
 function show(h){
  pages.forEach(function(p){$(p).classList.toggle('on',p===h)});
